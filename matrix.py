@@ -106,11 +106,11 @@ X3 = ((k12*X1)-(I1*X2_diff)+(m12*X2))/k12
 # x = Symbol('x')
 # i = integrate(2.54e-2)
 
-import sympy
+#import sympy
 # 1/(x^4(sqrt(x^2-a^2))), a > 0
-x, a = sympy.symbols('x, a')
-exp = X2_rd
-exp_int = sympy.integrate(exp, x)
-print(exp_int)
+#x, a = sympy.symbols('x, a')
+#exp = X2_rd
+#exp_int = sympy.integrate(exp, x)
+#print(exp_int)
 
 
