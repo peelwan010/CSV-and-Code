@@ -29,3 +29,14 @@ The focus here is on programming and problem-solving approaches rather than doma
 ## Notes
 
 This repository reflects exploratory and iterative work. The emphasis is on clarity of logic and correctness of implementation rather than production-level optimization.
+
+## Methodology Overview
+
+The computations in this repository are centered around deriving and implementing matrix-based relationships to calculate an output variable (X3) from a combination of input parameters and structured data.
+
+The mathematical relationships were derived independently and then implemented in Python to allow:
+- validation of derived formulas through computation
+- regression-style analysis and numerical exploration
+- easy replacement of placeholder data with real experimental or observational datasets
+
+Randomized inputs and CSV-based data are used as stand-ins to demonstrate how the same logic can be applied directly to real scientific data without changing the core computation.
