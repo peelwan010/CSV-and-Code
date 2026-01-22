@@ -1,6 +1,6 @@
 # Independent Scientific Programming & Data Analysis Experiments
 
-This repository contains independent scientific programming work focused on implementing and validating logic-heavy, matrix-based, and data-driven computations using Python. The emphasis is on translating derived mathematical relationships into correct, reproducible code and using computation to validate analytical results.
+This repository contains independent scientific programming work focused on implementing, validating, and visualizing logic-heavy, matrix-based, and data-driven computations using Python. The emphasis is on translating derived mathematical relationships into correct, reproducible code and using computation and visualization to validate analytical results.
 
 ## Context
 
@@ -14,18 +14,31 @@ The computations in this repository implement and validate a derived matrix-base
 
 This computational method was central to obtaining analytical results and was developed to ensure correctness, consistency, and reproducibility of the calculation. The code is written such that placeholder inputs can be easily replaced with real experimental or observational data without modifying the core logic.
 
-The emphasis of this repository is on the implementation of the method itself rather than on publication-specific outcomes.
+Numerical simulation and visualization are used to inspect relationships between inputs and outputs, identify expected trends, and validate analytical behavior.
 
 ## Repository Structure
 
 - `data/`  
-  CSV files used as structured inputs for numerical and matrix-based computations.
+  CSV files used as structured inputs for numerical and matrix-based computations. These act as stand-ins for real scientific datasets.
 
-- `scripts/`  
-  Python scripts implementing derived mathematical relationships, matrix operations, and analytical validation logic.
+- `scripts/matrix_operations.py`  
+  Core implementation of derived matrix relationships, X3 computation, and visualization routines used for analytical validation.
+
+- `scripts/math_validation.py`  
+  Symbolic and numerical validation routines using SymPy and SciPy, used to inspect and verify mathematical expressions during method development. This module is intentionally separated from the main computation pipeline.
 
 - `images/`  
   Supporting visual or relational references used during analysis.
+
+## Visualization & Validation
+
+The repository includes matplotlib-based visualizations to:
+- Compare input variables (X1, X2) with the derived output (X3)
+- Inspect parameter distributions
+- Analyze relationships between inputs and the computed result
+- Perform final sanity checks on the derived output variable
+
+These plots serve as validation tools rather than presentation graphics.
 
 ## Focus Areas
 
@@ -33,8 +46,9 @@ The emphasis of this repository is on the implementation of the method itself ra
 - Matrix and numerical computations
 - Data handling and transformation
 - Translating derived mathematical relationships into code
-- Analytical validation through computation
+- Analytical validation using computation and visualization
+- Symbolic and numerical verification of expressions
 
 ## Notes
 
-This repository reflects exploratory and method-focused scientific programming. The emphasis is on clarity of logic and correctness of implementation rather than production-level optimization or performance tuning.
+This repository reflects exploratory, method-focused scientific programming. The emphasis is on clarity of logic, correctness of implementation, and validation of derived methods rather than production-level optimization, performance tuning, or publication-specific outcomes.
